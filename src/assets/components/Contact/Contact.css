@@ -95,6 +95,7 @@
     margin: 30px auto;
     width: 20vmax;
     height: 13vmax;
+    margin-bottom: -40px;
     
   }
   .submitbutton{
@@ -114,4 +115,22 @@
     color: #28a745;
   }
   
+@media(max-width:756px)
+{
+    .v1logo {
+        display: block;
+        margin: 0px auto;
+        width: 20vmax;
+        height: 13vmax;
+        margin-bottom: -50px;
+      }
+    .applynow {
+        display: block;
+        margin: 30px auto;
+        width: 16vmax;
+        height: 10vmax;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+      }
+}
   

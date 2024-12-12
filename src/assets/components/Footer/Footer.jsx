@@ -19,7 +19,7 @@ const Footer = () => {
               About Us
             </RouterLink>
           </li>
-        <li>Apply</li>
+        
       </ul>
 
       <ul className='listmedia'>

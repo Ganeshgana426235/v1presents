@@ -2,7 +2,7 @@ import React from 'react';
 import v1homevideos from '../../Media/v1presentvideos.mp4';
 import './Aboutus.css';
 import v1homevideo from '../../Media/homevideo.mp4';
-
+import v1homevideo2 from '../../Media/v1presentvideos2.mp4';
 const Aboutus = () => {
   return (
     <div className='a'>
@@ -20,6 +20,7 @@ const Aboutus = () => {
           </video>
         
       </div>
+
       <div className='Aboutus'>
         <div className='home'>
           <video
@@ -34,6 +35,24 @@ const Aboutus = () => {
             Your browser does not support the video tag.
           </video>
         </div>
+        <div className='home'>
+          <video
+            autoPlay
+            loop
+            muted // Optional: mute the video if you want
+           
+            className='bimage2'
+            src={v1homevideo2}
+            type="video/mp4"
+          >
+            Your browser does not support the video tag.
+          </video>
+          
+        </div>
+        <div className='scrolltext'>
+        <marquee>Welcome to V1 Presents! Where vision meets creation, Stay tuned for exciting updates and releases!, Thank You</marquee>
+        </div>
+        
         <div className='home'>
           <p>
           <b>Welcome to V1 Presents – Where Talent Meets Opportunity</b> <br></br>

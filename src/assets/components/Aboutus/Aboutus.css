@@ -23,18 +23,29 @@ marquee{
     padding-top: 0px;
     margin-top: 0px;
 }
-.bimage{
+.bimage,.bimage2{
     padding-top: 30px;
     width: 30vmax;
     height: 28vmax;
+}
+.bimage2{
+    display: none;
 }
 p{
     margin-left: 35px;
     text-align: left;
     font-size: 1.5vmax;
 }
+.scrolltext{
+    display: none;
+}
 
 @media(max-width:756px){
+    .scrolltext{
+        display: inline-block; /* Make the text inline so it can scroll horizontally */
+  white-space: nowrap; /* Prevent the text from wrapping */
+  animation: marquee 15s linear infinite;
+    }
     .Aboutus{
         display: flex;
         align-items: center;
@@ -42,15 +53,20 @@ p{
         width: 100%;
     }
     .bimage{
+        display: none;
         padding-top: 0px;
         width: 40vmax;
         height: 32vmax;
+    }
+    .bimage2{
+        display: block;
     }
     p{
         margin-left: -5px;
         text-align: left;
     }
     .uimage{
+        display: none;
         margin: 0px;
         width: 80vmin;
         height: 45vmin;

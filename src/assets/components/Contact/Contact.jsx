@@ -17,7 +17,7 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "ae3a7e2b-20af-4c9a-811f-951e9028c054");
+    formData.append("access_key", "5ce48fa5-a3b7-44cc-9cd5-69487618a200");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -72,7 +72,7 @@ Reach out today and start your journey with V1Presents!</p>
       <form onSubmit={onSubmit}>
       <input type='text' 
       required
-        placeholder='Name'
+        placeholder='Name *'
         name='Name'
         >
         </input>
@@ -84,27 +84,26 @@ Reach out today and start your journey with V1Presents!</p>
         <input
         required
         type='number'
-        placeholder='Age'
+        placeholder='Age *'
         name='Age'
         >
         </input>
         <input
         required
         type='tel'
-        placeholder='Mobile Number'
+        placeholder='Mobile Number *'
         name='Phone'
         >
         </input>
         <input
-        required
         type='email'
-        placeholder='Gmail'
+        placeholder='Gmail '
         name='Gmail'
         >
         </input>
         <input
         required
-        placeholder='Occupation'
+        placeholder='Occupation *'
         name='occupation'
         >
         </input>
@@ -117,7 +116,7 @@ Reach out today and start your journey with V1Presents!</p>
         </input>
         <textarea
         required
-        placeholder='Your Message'
+        placeholder='Your Message *'
         rows='5'
         name='Message'
         >
@@ -134,7 +133,7 @@ Reach out today and start your journey with V1Presents!</p>
   <br></br><br></br>
   <p>Srirama Nilayam, Gandi Maisamma, Hyderabad - 500043</p>
   <p>
-    Ph : +91 6300161975<br></br> Email : v1presents@gmail.com <br></br></p>
+    Ph : +91 6300161975<br></br> Email : vonepresents@gmail.com <br></br></p>
 
 </div>
       
