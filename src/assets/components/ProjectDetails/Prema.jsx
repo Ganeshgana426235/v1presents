@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './prema.css';
+import './Prema.css';
 import youtube from '../../Media/youtube.svg'
 const Prema = () => {
   const [isSong, setSong] = useState(false);
