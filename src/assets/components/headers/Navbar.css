@@ -1,0 +1,155 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  height: 60px;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logotext {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navimage {
+  height: 50px;
+  width: auto;
+  margin-left: 10px;
+}
+
+.v1 {
+  color: #67b9dc;
+  font-family: Georgia, serif;
+  font-size: 35px;
+  margin-left: 25px;
+  font-weight: 700;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.nav-menu li {
+  font-size: 16px;
+  font-family: Impact, sans-serif;
+  background-color: #ffffff;
+}
+
+.nav-menu a {
+  text-decoration: underline;
+  color: #333;
+  font-weight: 500;
+  background-color: #ffffff;
+  transition: ease-in-out 0.4s;
+}
+
+.nav-menu a:hover {
+  color: #69c3cd;
+  text-decoration: none;
+}
+
+.menu-option {
+  display: none;
+}
+.menu-list{
+  display: none;
+}
+
+@media (max-width: 756px) {
+  .menu-option {
+    display: block;
+    font-size: 30px;
+    margin-right: 10px;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    position: relative;
+    margin: -30px;
+    width: 118%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .v1 {
+    color: #67b9dc;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    margin-left: 25px;
+    font-weight: 700;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .menu-list {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Hidden offscreen by default */
+    width: 300px;
+    height: 100%;
+    background-color: rgb(116, 122, 148);
+    color: #3b2424;
+    display: flex;
+    flex-direction: column;
+    top: 10;
+    transition: right 0.4s ease;
+    z-index: 1000;
+  }
+
+  .menu-list.show-menu {
+    right: 0; /* Slide the menu in */
+  }
+
+  .menu-list ul {
+    list-style: none;
+    background-color:rgb(116, 122, 148);
+    padding: 0;
+    text-align: center;
+  }
+
+  .menu-list ul li {
+    background-color: rgb(116, 122, 148);
+    margin: 20px 0;
+    text-decoration: underline;;
+  }
+
+  .menu-list ul li a {
+    text-decoration: none;
+    color: #220eff;
+    background-color: rgb(116, 122, 148);;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  .wrong{
+    text-align: right;
+    margin-right: 10px;
+    background-color: rgb(116, 122, 148);;
+    font-size: 32px;
+    color: white;
+    margin-top: 10px;
+  }
+
+  .menu-list ul li a:hover {
+    color: #ff9800;
+  }
+}

@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Aboutus{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+}
+.uimage{
+    
+    width: 85vmin;
+    height: 40vmin;
+    
+}
+marquee{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.bimage{
+    padding-top: 30px;
+    width: 30vmax;
+    height: 28vmax;
+}
+p{
+    margin-left: 35px;
+    text-align: left;
+    font-size: 1.5vmax;
+}
+
+@media(max-width:756px){
+    .Aboutus{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .bimage{
+        padding-top: 0px;
+        width: 40vmax;
+        height: 32vmax;
+    }
+    p{
+        margin-left: -5px;
+        text-align: left;
+    }
+    .uimage{
+        margin: 0px;
+        width: 80vmin;
+        height: 45vmin;
+        padding-bottom: 0px;
+    }
+}

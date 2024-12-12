@@ -1,0 +1,42 @@
+.listmedia img{
+    width: 20px;
+    height: 20px;
+}
+.listmedia
+{
+    display: flex;
+}
+.listmedia li{
+    list-style: none;
+    margin: 10px;
+    text-decoration: none;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.listitems{
+    display: flex;
+}
+.listitems li{
+    list-style: none;
+    text-decoration: none;
+    margin: 10px;
+}
+.copyright{
+    padding-top: 5px;
+    font-size: 16px;
+    text-align: left;
+}
+.lis{
+    text-decoration: none;
+}
+hr{
+    width: 100%;
+}
+
+@media(max-width:756px){
+    .copyright{
+        font-size: 14px;
+    }
+}
